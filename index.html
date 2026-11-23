@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mural de Publicações</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="mural">
+
+            <header class="topo">
+                <div>
+                    <h1>Meu Mural</h1>
+                    <p>Publicações disponíveis em um só lugar.</p>
+                </div>
+
+                <span id="contador">0 publicações</span>
+            </header>
+
+            <div class="controles">
+                <input
+                    id="filtro"
+                    type="search"
+                    placeholder="Filtrar pelo título"
+                >
+
+                <button id="btn-carregar" type="button">
+                    Carregar publicações
+                </button>
+
+                <button id="btn-ordenar" type="button">
+                    Ordenar por título
+                </button>
+
+                <button id="btn-atualizar" type="button">
+                    Atualizar
+                </button>
+            </div>
+
+            <p id="mensagem" role="status"></p>
+
+            <section
+                id="lista-posts"
+                aria-label="Publicações"
+            ></section>
+
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
